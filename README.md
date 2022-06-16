@@ -74,7 +74,7 @@ To set CI/CD pipeline in heroku we need 3 information
 
 1.HEROKU_EMAIL = switch2dtsci@gmail.com
 
-2.HEROKU_API_KEY = 0bc6dffe-5e7d-4bc4-826b-c1c2c692e589
+2.HEROKU_API_KEY = <-------->
 
 3.HEROKU_APP_NAME = ml-regression-applica
 
