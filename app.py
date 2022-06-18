@@ -1,5 +1,6 @@
 
 from flask import Flask
+from housing.logger import logging
 app=Flask(__name__)
 
 
