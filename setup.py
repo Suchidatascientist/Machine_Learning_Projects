@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 from typing import List
 
 # declaring Variable for setup functions
@@ -9,6 +9,7 @@ DESCRIPTION="This is first FSDS Nov 21 batch Machine Leraning project"
 PACKAGES=["housing"]
 REQUIRNMENT_FILE_NAME="requirnments.txt"
 
+
 def get_requirnments_list()->List[str]:
     """
     Description: This function is going to return list of requirement 
@@ -16,9 +17,9 @@ def get_requirnments_list()->List[str]:
     return This function is going to return a list which contain name 
     of libraries mentioned in requirements.txt file
     """
-    
+
     with open (REQUIRNMENT_FILE_NAME) as requirnment_file:
-        return requirnment_file.readlines()
+        return requirnment_file.readlines().remove("-e .")
 
 
 
@@ -27,7 +28,7 @@ setup(
    version=VERSION,
    author=AUTHOR,
    description=DESCRIPTION,
-   packages=PACKAGES,
+   packages=find_packages(),
    install_requires=get_requirnments_list()
 )
 
