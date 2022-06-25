@@ -108,3 +108,8 @@ docker stop <container_id>
 ```
 python setup.py install
 ```
+
+install ipynbkernel
+```
+pip install ipynbkernel
+``` 
